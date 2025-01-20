@@ -1,0 +1,77 @@
+:root {
+
+    background-color:#ededed;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-weight: 400;
+
+}
+
+header {background-color: #53717e ;
+display: flex;
+align-items: center;
+justify-content:center;border: 1px solid rgb(0,0,0 /0.1);
+padding: 20px;
+
+}
+
+header,
+main {
+    margin: 0 auto;
+    color: #ededed;
+    
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #53717e;
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav a {
+    display: block;
+    color: #ededed;
+    text-decoration: none;
+}
+
+nav a hover {
+    text-decoration:overline;
+
+}
+
+.active {
+    color: yellow;
+}
+
+
+    
+
+
+
+
+
+
+
+  /* COLORS SCHEME
+https://coolors.co/48636f-53717e-5e7b87-77929e-88a2ad
+*/
