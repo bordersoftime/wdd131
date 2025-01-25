@@ -7,3 +7,4 @@ yearSpan.textContent = currentYear; // Update the year dynamically
 const lastModified = document.lastModified;
 const lastModifiedParagraph = document.getElementById("lastModified");
 lastModifiedParagraph.textContent = `Last modified: ${lastModified}`; // Update the last modified date
+
