@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!--
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rui Barbosa">
@@ -12,15 +10,7 @@
     <script src="scripts/getdates.js" defer></script>
 
     
-    <title>WDD 131: Dynamic Web Fundamentals - Rui Barbosa</title>
-</head>
-<body>
-        <div class="container"></div>
 
-    <header>
-        <h1> WDD 131: Dynamic Web Fundamentals - Rui Barbosa </h1>
-        <nav>
-            <ul class="navigation">
                 <li><a href="www.linkedin.com/in/rui-oliveira-9140a8211">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/profile">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/9?lang=eng&id=p6#p6">Scripture </a></li>
@@ -63,5 +53,97 @@
 
             </footer>
         
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content= "Rui Barbosa">
+    <meta name="description" content="Welcome to my WDD 131 (Dynamic Web Fundamentals)">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rui Barbosa</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@1,14..32&family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="head-sec1">
+            <h1>
+                WDD 131 - Dynamic Web Fundamentals - <span id="my-name">Rui Barbosa</span> 
+            </h1>
+        </div>
+        <div class="head-sec2">
+            <nav class="nav-pane">
+                <a href="www.linkedin.com/in/rui-oliveira-9140a8211/">LinkedIn</a>
+                <a href="https://byupw.instructure.com/courses/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/9?lang=eng&id=p6#p6">Scripture</a>
+                <a href="final-project.html">Final Project</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <section class="card1">
+                <h2>
+                    About Me
+                </h2>
+                <div class="about-me"> 
+                    <p> My name is Rui Barbosa, I'm living in Arapiraca, a city in the interior of Alagoas State that is a small state in Brazil.
+                        I’m a BYU Pathway student pursuing a Bachelor of Science in Software Development.
+                        I have a passion for creating cherished memories and exploring different aspects of life. I’m always eager to learn new
+                        things and embrace fresh experiences.I love to cook, play guitar, watch animes and enjoy the life.
+                    </p>  
+                    <img id="profile-pic" src="images/profile.jpg" alt="profile" width="350">           
+                </div>
+                <div id="alagoas">
+                    <h3>
+                        Alagoas
+                    </h3>
+                    <div id="about-alagoas">
+                        <div id="alagoas-img">
+                            <img id="al-pic" src="images/alagoas-state.jpg" alt="a picture from a beach in Alagoas">
+                            <p>
+                                Beach of Alagoas
+                            </p>
+                        </div>
+                        <p class="about-alagoas">
+                            "Alagoas is a Brazilian state that is part of the Northeast region , with its capital in the city of Maceió. Its relief is formed by depressions and plateaus, and the climates found in the state are semi-arid and tropical. The current population of Alagoas is just over 3.1 million inhabitants, most of whom live in cities. Currently, the economy of Alagoas stands out for the production of sugar cane and the industry linked to this crop."
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="card2">
+                <h2>
+                    Web Dev Resources
+                </h2>
+                <div class="dev-resources">
+                    <ul>
+                        <li><a href="">Dev.to Community</a></li>
+                        <li><a href="">Smashing Magazine</a></li>
+                        <li><a href="">CSS Tricks</a></li>
+                        <li><a href="">W3 Schools</a></li>
+                        <li><a href="">Udemy</a></li>
+                        <li><a href="">Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> 👩🏾‍💻 Rui Barbosa - Alagoas, Brazil👩🏾‍💻
+        </p>
+        <p id="lastModified">
+
+        </p>
+    </footer>
 </body>
 </html>

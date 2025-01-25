@@ -1,10 +1,9 @@
-'this is a string'
-
-const copyrightParagraph = document.getElementById('copyright');
+// Get the current year for the copyright
 const currentYear = new Date().getFullYear();
-copyrightParagraph.textContent = `© ${currentYear} Your Company Name`;
+const yearSpan = document.getElementById("currentyear");
+yearSpan.textContent = currentYear; // Update the year dynamically
 
-
-const lastModifiedParagraph = document.getElementById('last-modified');
-const lastModifiedDate = document.lastModified;
-lastModifiedParagraph.textContent = `Last modified: ${lastModifiedDate}`;
+// Get the last modified date of the document
+const lastModified = document.lastModified;
+const lastModifiedParagraph = document.getElementById("lastModified");
+lastModifiedParagraph.textContent = `Last modified: ${lastModified}`; // Update the last modified date
