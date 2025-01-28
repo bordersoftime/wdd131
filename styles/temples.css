@@ -1,0 +1,142 @@
+:root {
+    --primary-bg-color: #00000057;
+    --text-color-light: beige;
+    --text-color-dark: rgb(0, 0, 0);
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: Arial, sans-serif;
+    --transition-effect: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-secondary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+}
+
+header, footer {
+    background-color: var(--primary-bg-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+h1 {
+    color: var(--text-color-light);
+    font-family: var(--font-primary);
+    display: flex;
+    gap: 60px;
+    padding-right: 150px;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    color: var(--text-color-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: 100%;
+    padding: 10px 50px;
+    border: none;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    transition: background-color var(--transition-effect), transform var(--transition-effect);
+    transform: scale(1.1);
+    gap: 20%;
+    display: flex;
+    padding-top: 25px;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+#nav-links {
+    display: none;
+
+}
+
+#nav-links.show {
+    display:grid;
+    
+}
+
+#hamburger {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute; 
+    top: 20px; 
+    right: 10px; 
+    z-index: 100; 
+}
+
+
+@media (min-width: 768px) {
+    
+    
+    #nav-links {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    figure {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    figure {
+        flex: 1 1 100%; 
+    }
+}
+
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-around; 
+}
+
+figure {
+    margin: 0;
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 300px; 
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+footer {
+    background: #1a1a1ad5;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: var(--font-primary);
+    background-color: var(--primary-bg-color);
+}
