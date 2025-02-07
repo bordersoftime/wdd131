@@ -1,0 +1,225 @@
+:root {
+    --primary-bg-color: #00000057;
+    --text-color-light: beige;
+    --text-color-dark: rgb(0, 0, 0);
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: Arial, sans-serif;
+    --transition-effect: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-secondary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+}
+
+header, footer {
+    background-color: var(--primary-bg-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+h1 {
+    color: var(--text-color-light);
+    font-family: var(--font-primary);
+    display: flex;
+    gap: 60px;
+    padding-right: 150px;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    color: var(--text-color-dark);
+    text-transform: uppercase; /* Pone el texto en mayúsculas */
+    letter-spacing: 2px; /* Añade espacio entre letras para un efecto visual */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: 100%;
+    padding: 10px 50px;
+    border: none;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    transition: background-color var(--transition-effect), transform var(--transition-effect);
+    transform: scale(1.1);
+    gap: 20%;
+    display: flex;
+    padding-top: 25px;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+#nav-links {
+    display: none;
+
+}
+
+#nav-links.show {
+    display:grid;
+    
+}
+
+#hamburger {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute; 
+    top: 20px; 
+    right: 10px; 
+    z-index: 100; /* Asegurar que siempre esté visible */
+}
+
+
+
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+
+figure {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+    
+    
+}
+
+
+figcaption {
+
+    text-transform: uppercase; /* Pone el texto en mayúsculas */
+    letter-spacing: 2px; /* Añade espacio entre letras  */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* Estilo para cada tarjeta */
+section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Estilo para las imágenes de los templos */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+h3 {
+    font-size: 1.5em;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #000000;
+    margin: 5px 0;
+}
+
+p .label {
+    font-weight: bold;
+    color: #673ab7; 
+}
+
+
+
+
+
+
+
+
+
+/* Muestra el botón de hamburguesa (menu) en pantallas más pequeñas */
+@media (min-width: 768px) {
+    
+    
+    #nav-links {
+        display: flex; /* Aseguramos que los enlaces se vean en fila en pantallas grandes */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    figure {
+        flex: 1 1 calc(50% - 20px); /* En pantallas más pequeñas, las imágenes ocuparán la mitad del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    figure {
+        flex: 1 1 100%; /* En pantallas muy pequeñas, cada imagen ocupará el 100% del ancho */
+    }
+}
+
+.gallery {
+    display: flex; /* Utilizamos flex en lugar de grid */
+    flex-wrap: wrap; /* Las imágenes se moverán a una nueva fila si no caben en una sola fila */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: space-around; /* Distribuir las imágenes de manera uniforme */
+}
+
+figure {
+    margin: 0;
+    flex: 1 1 calc(33.333% - 20px); /* Las imágenes ocuparán un tercio de la fila menos el espacio del gap */
+    max-width: 300px; /* Limitar el ancho máximo de las imágenes */
+}
+
+img {
+    width: 100%; /* Asegurarse de que las imágenes ocupen todo el espacio de su contenedor */
+    height: auto; /* Mantener las proporciones de las imágenes */
+}
+
+
+footer {
+    background: #1a1a1ad5;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: var(--font-primary);
+    background-color: var(--primary-bg-color);
+}
