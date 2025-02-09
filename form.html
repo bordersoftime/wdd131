@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Submit your product reviews and share your experiences">
+    <meta name="author" content="Rui Barbosa">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Order Form</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+        </form>
+
+        <form action="review.html" method="get">
+            <label for="userName">Your Name (optional):</label>
+            <input type="text" id="userName" name="userName" placeholder="Enter your name">
+
+            <label>Overall Rating:</label> 
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">&#9733;</label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Useful Features -->
+            <label>Useful Features:</label>
+            <div class="useful-features">
+                <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+                <label for="feature1">Durability</label>
+
+                <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+                <label for="feature2">Ease of Use</label>
+
+                <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+                <label for="feature3">Performance</label>
+
+                <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
+                <label for="feature4">Design</label>
+            </div>
+
+            <label for="writtenReview">Written Review (optional):</label>
+            <textarea id="writtenReview" name="writtenReview" placeholder="Write your review..."></textarea>
+
+            <!-- Submission Button -->
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+
+    <footer>
+        ©2024 👩🏾‍💻 Rui Barbosa - Alagoas, Brazil👩🏾‍💻 <br>
+        <span id="lastModified">20/09/2024 21:26:53</span>
+    </footer>
+</body>
+</html>
