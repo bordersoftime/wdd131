@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Rui Barbosa" content="Album">
+    <title class="products-catalog">Products Album</title>
+    <!-- Meta Descriptions -->
+    <meta name="description" content="Submit and review products with ratings and feedback. Provide useful insights about your experience with various products.">
+    <!-- Meta Author -->
+    <meta name="author" content="Rui Barbosa">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-products.css">
+    <link rel="stylesheet" href="styles/products-large.css.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-products.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="titlemain">Products Catalog</h1>
+        <nav>
+            <button class="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="https://bordersoftime.github.io/wdd131/project/index.html">Home</a></li>
+                <li><a href="#" class="filter-btn" data-filter="large">Capacity</a></li>
+                <li><a href="#" class="filter-btn" data-filter="small">Production Date</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Product Search</h2> 
+        
+        <input type="text" id="search" placeholder="Search products..." />
+    
+        <div class="gallery">
+           
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>   ©2024 - THE IRONSIDE FACTORY 💻⚙️🛠️</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
